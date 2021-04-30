@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Menú desplegable</title>
+        <style>
+            nav {
+                text-align: center;
+                width: 14em;
+            }
+            
+            nav > ul {
+                display: none;
+                list-style: none;
+                box-shadow: 5px 5px 5px #8E8E8E;
+                padding: 0;
+            }
+            
+            nav > ul > li > a{
+                display: block;
+                padding: 5px;
+            }
+            nav > ul > li > a:hover{
+                background-color: #C2C2C2;
+            }
+            
+            nav > div {
+                background-color: #C2C2C2;
+                padding: 1em;
+                box-shadow: 2px 2px #6A6969;
+            }
+            
+            nav > div:active {
+                box-shadow: -2px -2px #6A6969;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            DIW <a href='#'>Inicio</a>
+        </header>
+        <h1>
+            Mi menú:
+        </h1>
+        <nav>
+            <div>
+                Menú desplegable:
+            </div>
+            <ul>
+                <li>
+                    <a>
+                        Opción 0
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Opción 1
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Opción 2
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Opción 3
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Opción 4
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            var bt = document.getElementsByTagName('div')[0];
+            var list = document.getElementsByTagName('ul')[0];
+            
+            bt.addEventListener('click', function () {
+                if (!list.style.display || list.style.display == 'none')
+                    list.style.display = 'block';
+                else
+                    list.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>

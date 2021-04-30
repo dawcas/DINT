@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Menú desplegable</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            nav {
+                width: 100%;
+                background-color: black;
+                color: white;
+            }
+            
+            nav > a:hover {
+                background-color: #B6B5B5;
+                color: black;
+            }
+            
+            #ocul {
+                position: relative;
+                display: none;
+                margin: 0 auto;
+            }
+            
+            #ocul > ul {
+                position: absolute;
+                left: 12%;
+                top: 0;
+                background-color: black;
+                color: white;
+                list-style: none;
+                padding: 0.5em 1.2em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            DIW <a href='#'>Inicio</a>
+        </header>
+        <nav>
+            <a>
+                Enlace 0
+            </a>
+            <a>
+                Enlace 1
+            </a>
+            <a id='btn'>
+                Enlace 2
+            </a>
+            <div id='ocul'>
+                <ul>
+                    <li>
+                        <a>
+                            Opción 0
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 1
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 2
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 3
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 4
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            var btn = document.getElementById('btn');
+            var list = document.getElementById('ocul');
+            
+            btn.addEventListener('click', function () {
+                if (!list.style.display || list.style.display == 'none')
+                    list.style.display = 'block';
+                else
+                    list.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>

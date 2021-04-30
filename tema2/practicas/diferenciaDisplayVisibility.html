@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Diferencia entre display: none y visibility: hidden</title>
+	<meta charset="utf-8">
+	<meta name="generator" content="Geany 1.33">
+    <link type='text/css' rel='stylesheet' href='../../css/estilo.css'>
+    <link type='text/css' rel='stylesheet' href='../../css/disp_visi.css'>
+</head>
+
+<body>
+    <header>
+            DIW <a href='../../'>Inicio</a>
+    </header>
+    
+    <section>
+        <article>
+            <p>
+                <b>Difference between display:none and visiblity: hidden</b>
+            </p>
+        
+            <p>
+                <b>visibility:hidden</b> hides the element, but it still takes up space in the layout.
+            </p>
+        
+            <p>
+                <b>display:none</b> removes the element from the document. It does not take up any space.
+            </p>
+            
+            <div class='imgs'>
+                <img src='../../img/img_5terre.jpg'>
+                <button type='button'>Remove</button>
+            </div>
+            <div class='imgs'>
+                <img src='../../img/img_lights.jpg'>
+                <button type='button'>Hide</button>
+            </div>
+            <div class='imgs'>
+                <img src='../../img/img_forest.jpg'>
+                <button type='button'>Reset all</button>
+            </div>
+        </article>
+    </section>
+    
+    <script>
+        var butn = document.getElementsByTagName('button');
+        var imag = document.getElementsByTagName('img');
+        
+        butn[0].addEventListener('click', function() {
+            imag[0].style.display='none';
+        });
+        
+        butn[1].addEventListener('click', function () {
+            imag[1].style.visibility='hidden';
+        });
+        
+        butn[2].addEventListener('click', function () {
+            imag[0].style.display='block';
+            imag[1].style.visibility='visible';
+        });
+    </script>
+</body>
+
+</html>

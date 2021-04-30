@@ -1,0 +1,17 @@
+div.imgs {
+    width: 30%;
+    float: left;
+    margin: 1em auto;
+    margin-left: 1.2em;
+    padding: 0.2em;
+    border: solid #AF146F 1px;
+    box-shadow: 0.35em 0.25em 5px #792E5A;
+}
+
+div.imgs > img {
+    width: 100%;
+}
+
+div.imgs > button {
+    width: 100%;
+}

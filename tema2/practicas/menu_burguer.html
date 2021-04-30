@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Menú desplegable</title>
+        <style>
+            nav {
+                text-align: center;
+                width: 14em;
+                position: relative;
+            }
+            
+            .nav {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                display: none;
+                background-color: white;
+                box-shadow: 5px 5px 5px #8E8E8E;
+            }
+            
+            .nav > ul {
+                list-style: none;
+                padding: 0;
+            }
+            
+            .nav > ul > li > a{
+                display: block;
+                padding: 5px;
+            }
+            .nav > ul > li > a:hover{
+                background-color: #C2C2C2;
+            }
+            
+            nav > div#bur {
+                background-image: url('../../img/burger.png');
+                background-repeat: no-repeat;
+                background-origin: content-box;
+                background-position: center;
+                background-size: cover;
+                padding: 1em;
+                width: 20%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            DIW <a href='#'>Inicio</a>
+        </header>
+        <h1>
+            Mi menú:
+        </h1>
+        <nav>
+            <div id='bur'>
+                
+            </div>
+            <div class='nav'>
+                <ul>
+                    <li>
+                        <a>
+                            Opción 0
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 1
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 2
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 3
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Opción 4
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            var bt = document.getElementsByTagName('div')[0];
+            var capaLista = document.getElementsByTagName('nav')[0];
+            var list = document.getElementsByClassName('nav')[0];
+            
+            bt.addEventListener('mouseover', function () {
+                console.log('over');
+                list.style.display = 'block';
+            });
+            
+            capaLista.addEventListener('mouseout', function () {
+                console.log('out');
+                list.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>

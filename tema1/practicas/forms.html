@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica formularios</title>
+        <link href='../../css/estilo.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            DIW <a href='../../'>Inicio</a>
+        </header>
+        
+        <main>
+            <section>
+                <article>
+                    <form action='' method='post' name='formulario'>
+                        <p>
+                            <label for='nombre'>Nombre:</label> <input type='text' name='nombre' placeholder='nombre'>
+                        </p>
+                        <p>
+                            <label for='email'>Correo electrónico:</label> <input type='email' name='email' placeholder='email'>
+                        </p>
+                        <p>
+                            <label for='descr'>Descripción:</label><br> <textarea name='descr' placeholder='su descripción'></textarea>
+                        </p>
+                        <p>
+                            <label for='date'>Fecha de nacimiento:</label> <input type='date' name='date'>
+                        </p>
+                        <p>
+                            <label for='color'>Color:</label> <input type='color' name='color'>
+                        </p>
+                        <p>
+                            <label for='nivel'>Nivel:</label> <input type='range' min='1' max='10'>
+                        </p>
+                        <p>
+                            <input type='submit' value='Enviar' class='butt'>
+                        </p>
+                    </form>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            
+        </footer>
+    </body>
+</html>
