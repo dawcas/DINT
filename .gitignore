@@ -1,2 +1,5 @@
+# ignorar el propio .gitignore
+.gitignore
+
 # ignorar archivos de proyecto de geany
 *.geany
