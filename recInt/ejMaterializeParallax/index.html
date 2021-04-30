@@ -7,19 +7,36 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <nav role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"><img src='img/icon.png'></a>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Helados</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Sorbetes</a></li>
+      </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li>
+            <a class="dropdown-trigger" data-target="dropdown1">
+                Sabores<i class="material-icons right">arrow_drop_down</i>
+            </a>
+        </li>
+        <li><a href="#">Elaboración</a></li>
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Sabores</a></li>
+        <li><a href="#">Elaboración</a></li>
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -58,16 +75,20 @@
   </div>
 
 
+<!--
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
     </div>
-    <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax">
+        <img src="img/background2.jpg" alt="Unsplashed background img 2">
+-->
+        <video controls>
+            <source src='video/Best Ever Vegan Ice Cream.mp4' type='video/mp4'>
+        </video>
+<!--
+    </div>
   </div>
+-->
 
   <div class="container">
     <div class="section">
@@ -108,6 +129,7 @@
   </div>
 
 
+<!--
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -118,39 +140,24 @@
     </div>
     <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
+-->
 
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+  <footer class="page-footer row">
+    <p class='col m3 l3'>CONTACTO</p>
+    <p class='col m3 l3'>HORARIO</p>
+    <p class='col m3 l3'>RR.SS.</p>
+    <p class='col m3 l3'><a href='#'>Alérgenos (pdf)</a></p>
+    
+    <p class='col m3 l3'>Dirección C/ Falsa 123, Imaginación<br>email: info@vega.do<br>tlf: 999999999</p>
+    <p class='col m3 l3'>08:00 - 22:00</p>
+    <p class='col m3 l3'>
+        <a href='#'><i class='fab fa-facebook'></i></a>
+        <a href='#'><i class='fab fa-twitter'></i></a>
+        <a href='#'><i class='fab fa-youtube'></i></a>
+    </p>
+    <div class="footer-copyright col s12 m12 l12 black-text center">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        Copyright <span class='material-icons'>copyright</span>
       </div>
     </div>
   </footer>
@@ -160,6 +167,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    $('.dropdown-trigger').dropdown({hover:true});
+  </script>
   </body>
 </html>

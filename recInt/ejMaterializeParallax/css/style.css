@@ -68,8 +68,24 @@ h1.header, h5.header {
     text-shadow: -1px -1px 0 #f98365, -1px 1px 0 #f98365, 1px -1px 0 #f98365, 1px 1px 0 #f98365;
 }
 
+nav {
+    background-color: #a1dffb;
+}
+
+video {
+    max-width: 100%;
+}
+
+a {
+    color: #c33124;
+}
+
+footer.page-footer {
+    color: black;
+    background-color: #f9de59;
+}
+
 .brand-logo > img {
     max-height: 128px;
     width: auto;
 }
-
