@@ -1,0 +1,14 @@
+nav {
+    @include box($shadowColor);
+    width: 100%;
+    
+    ul {
+        @include flexContainer(1);
+        list-style: none;
+        
+        li {
+            @include flexi(1);
+            @include box($bgColor);
+        }
+    }
+}

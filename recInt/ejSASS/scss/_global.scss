@@ -1,0 +1,51 @@
+// Mixins
+
+@mixin box($bgc) {
+    margin: 0.5% auto; 
+    padding: 1em;
+    border-radius: 15px;
+    background-color: $bgc;
+    color: $txtColor;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include flexContainer(1);
+    margin: 0 auto;
+    padding: 1em;
+    width: 90%;
+    background-color: $bgColor;
+    font-family: benveno;
+}
+
+header {
+    @include box($shadowColor);
+    width: 100%;
+}
+
+aside {
+    @include flexi(1);
+    @include box($shadowColor);
+}
+
+main {
+    @include box($shadowColor);
+    @include flexi(2);
+    @include flexContainer(1);
+    
+    article {
+        @include flexi(100%);
+        @include box($bgColor);
+        width: 100%;
+    }
+}
+
+footer {
+    @include flexContainer(1);
+    @include box($shadowColor);
+    width: 100%;
+}

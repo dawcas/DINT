@@ -1,0 +1,95 @@
+@font-face {
+  font-family: benveno;
+  src: url("../../../fonts/benveno/BonvenoCF-Light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 1em;
+  width: 90%;
+  background-color: #1D1D1D;
+  font-family: benveno;
+}
+
+header {
+  margin: 0.5% auto;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #540031;
+  color: #F2C4DF;
+  width: 100%;
+}
+
+aside {
+  flex: 1;
+  display: inline-flex;
+  margin: 0.5% auto;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #540031;
+  color: #F2C4DF;
+}
+
+main {
+  margin: 0.5% auto;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #540031;
+  color: #F2C4DF;
+  flex: 2;
+  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+main article {
+  flex: 100%;
+  display: inline-flex;
+  margin: 0.5% auto;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #1D1D1D;
+  color: #F2C4DF;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5% auto;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #540031;
+  color: #F2C4DF;
+  width: 100%;
+}
+
+nav {
+  margin: 0.5% auto;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #540031;
+  color: #F2C4DF;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li {
+  flex: 1;
+  display: inline-flex;
+  margin: 0.5% auto;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #1D1D1D;
+  color: #F2C4DF;
+}
+
+/*# sourceMappingURL=styles.css.map */
