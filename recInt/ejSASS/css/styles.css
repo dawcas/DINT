@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  margin: 0.5% auto;
+  margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #540031;
@@ -29,7 +29,7 @@ header {
 aside {
   flex: 1;
   display: inline-flex;
-  margin: 0.5% auto;
+  margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #540031;
@@ -37,7 +37,7 @@ aside {
 }
 
 main {
-  margin: 0.5% auto;
+  margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #540031;
@@ -50,7 +50,7 @@ main {
 main article {
   flex: 100%;
   display: inline-flex;
-  margin: 0.5% auto;
+  margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #1D1D1D;
@@ -61,7 +61,7 @@ main article {
 footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5% auto;
+  margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #540031;
@@ -70,7 +70,7 @@ footer {
 }
 
 nav {
-  margin: 0.5% auto;
+  margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #540031;
@@ -85,7 +85,7 @@ nav ul {
 nav ul li {
   flex: 1;
   display: inline-flex;
-  margin: 0.5% auto;
+  margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #1D1D1D;
