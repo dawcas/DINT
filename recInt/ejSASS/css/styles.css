@@ -46,6 +46,7 @@ main {
   display: inline-flex;
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 main article {
   flex: 100%;
@@ -55,12 +56,12 @@ main article {
   border-radius: 15px;
   background-color: #1D1D1D;
   color: #F2C4DF;
-  width: 100%;
+}
+main article picture img {
+  max-width: 100%;
 }
 
 footer {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
@@ -68,7 +69,37 @@ footer {
   color: #F2C4DF;
   width: 100%;
 }
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer div div {
+  flex: 1;
+  display: inline-flex;
+  margin: 0.5%;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #1D1D1D;
+  color: #F2C4DF;
+}
 
+@media screen and (max-width: 500px) {
+  footer div div {
+    flex: 100%;
+    display: inline-flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  aside {
+    flex: 100%;
+    display: inline-flex;
+  }
+
+  main {
+    flex: 100%;
+    display: inline-flex;
+  }
+}
 nav {
   margin: 0.5%;
   padding: 1em;
@@ -90,6 +121,13 @@ nav ul li {
   border-radius: 15px;
   background-color: #1D1D1D;
   color: #F2C4DF;
+}
+
+@media screen and (max-width: 500px) {
+  nav ul li {
+    flex: 100%;
+    display: inline-flex;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

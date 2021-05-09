@@ -1,5 +1,4 @@
 // Mixins
-
 @mixin box($bgc) {
     margin: 0.5%;
     padding: 1em;
@@ -8,6 +7,7 @@
     color: $txtColor;
 }
 
+// STYLES
 * {
     margin: 0;
     padding: 0;
@@ -36,16 +36,48 @@ main {
     @include box($shadowColor);
     @include flexi(2);
     @include flexContainer(1);
+    max-width: 100%;
     
     article {
         @include flexi(100%);
         @include box($bgColor);
-        width: 100%;
+        
+        picture img {
+            max-width: 100%;
+        }
     }
 }
 
 footer {
-    @include flexContainer(1);
     @include box($shadowColor);
     width: 100%;
+    
+    div {
+        @include flexContainer(1);
+        
+        div {
+            @include flexi(1);
+            @include box($bgColor);
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 500px) {
+    footer {
+        div {
+            div {
+                @include flexi(100%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    aside {
+        @include flexi(100%);
+    }
+    main {
+        @include flexi(100%);
+    }
 }
