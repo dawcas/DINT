@@ -33,16 +33,26 @@ aside {
 }
 
 main {
-    @include box($shadowColor);
     @include flexi(2);
     @include flexContainer(1);
+    @include box($shadowColor);
     max-width: 100%;
     
     article {
         @include flexi(100%);
+        @include flexContainer(1);
         @include box($bgColor);
         
-        picture img {
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        figure {
+            margin-bottom: 1rem;
+        }
+        
+        figure picture img, picture img {
+            @include flexi(100%);
             max-width: 100%;
         }
     }

@@ -37,27 +37,37 @@ aside {
 }
 
 main {
+  flex: 2;
+  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #540031;
   color: #F2C4DF;
-  flex: 2;
-  display: inline-flex;
-  display: flex;
-  flex-wrap: wrap;
   max-width: 100%;
 }
 main article {
   flex: 100%;
   display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0.5%;
   padding: 1em;
   border-radius: 15px;
   background-color: #1D1D1D;
   color: #F2C4DF;
 }
-main article picture img {
+main article h2 {
+  margin-bottom: 1.5rem;
+}
+main article figure {
+  margin-bottom: 1rem;
+}
+main article figure picture img, main article picture img {
+  flex: 100%;
+  display: inline-flex;
   max-width: 100%;
 }
 
