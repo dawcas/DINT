@@ -9,6 +9,8 @@ nav {
         li {
             @include flexi(1);
             @include box($bgColor);
+            text-decoration: underline;
+            cursor: pointer;
         }
     }
 }

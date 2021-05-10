@@ -121,6 +121,8 @@ nav ul li {
   border-radius: 15px;
   background-color: #1D1D1D;
   color: #F2C4DF;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {

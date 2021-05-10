@@ -18,11 +18,11 @@
         <nav>
             NAV
             <ul>
-                <li>
-                    ITEM
+                <li onClick='redir("../")'>
+                    Recuperación
                 </li>
-                <li>
-                    ITEM
+                <li onClick='redir("rendimiento.html")'>
+                    Cosas del rendimiento
                 </li>
                 <li>
                     ITEM
@@ -67,5 +67,10 @@
                 </div>
             </div>
         </footer>
+        <script>
+            function redir(h) {
+                window.location.href = h;
+            }
+        </script>
     </body>
 </html>
