@@ -1,4 +1,7 @@
 // Mixins
+// mixin de las características básicas de cada elemento
+// $bgc es el color de fondo (background-color)
+
 @mixin box($bgc) {
     margin: 0.5%;
     padding: 1em;
@@ -20,20 +23,44 @@ body {
     width: 90%;
     background-color: $bgColor;
     font-family: benveno;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 header {
+    @include flexContainer(0);
     @include box($shadowColor);
+    align-items: center;
     width: 100%;
+    
+    .logo {
+        @include flexi(1);
+        margin-right: 1.5rem;
+        
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    h1 {
+        @include flexi(7);
+    }
 }
 
 aside {
     @include flexi(1);
     @include box($shadowColor);
+    align-items: stretch;
+    
+    p {
+        @include flexi(100%);
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
 }
 
 main {
-    @include flexi(2);
+    @include flexi(3);
     @include flexContainer(1);
     @include box($shadowColor);
     max-width: 100%;
@@ -69,25 +96,5 @@ footer {
             @include flexi(1);
             @include box($bgColor);
         }
-    }
-}
-
-// MEDIA QUERIES
-@media screen and (max-width: 500px) {
-    footer {
-        div {
-            div {
-                @include flexi(100%);
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 700px) {
-    aside {
-        @include flexi(100%);
-    }
-    main {
-        @include flexi(100%);
     }
 }

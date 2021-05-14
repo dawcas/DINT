@@ -1,3 +1,6 @@
+//  Estilos de la barra de navegación
+//mejorar con hover
+
 nav {
     @include box($shadowColor);
     width: 100%;
@@ -11,15 +14,10 @@ nav {
             @include box($bgColor);
             text-decoration: underline;
             cursor: pointer;
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    nav {
-        ul {
-            li {
-                @include flexi(100%);
+        
+            &:hover {
+                background-color: $txtColor;
+                color: $bgColor;
             }
         }
     }
