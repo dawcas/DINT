@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Ejercicio SASS</title>
+        <title>Ejercicio vídeos</title>
         <meta name="generator" content="Geany 1.33">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href='css/styles.min.css' rel='stylesheet'>
@@ -14,45 +14,43 @@
                 <img alt='IMAGEN' src='img/companion cube.png'>
             </div>
             <h1>
-                HEADER
+                Multimedia
             </h1>
         </header>
         <nav>
-            NAV
             <ul>
                 <li onClick='redir("../")'>
                     Recuperación
                 </li>
+                <li onClick='redir(".")'>
+                    Ejercicio SASS
+                </li>
                 <li onClick='redir("rendimiento.html")'>
                     Cosas del rendimiento
-                </li>
-                <li onClick='redir("vids.html")'>
-                    Ejercicio vídeos
                 </li>
             </ul>
         </nav>
         <main>
-            MAIN
             <article>
-                <picture>
-                    <img src="img/0nullUndef-big.jpg" alt="Chiste" srcset="img/0nullUndef-big.jpg, img/0nullUndef-medium.jpg, img/0nullUndef-small.jpg">
-                </picture>
-            </article>
-            <article>
-                <picture>
-                    <img src="img/0nullUndef-big.jpg" alt="Chiste" srcset="img/0nullUndef-big.jpg 650w, img/0nullUndef-medium.jpg 465w, img/0nullUndef-small.jpg 1w">
-                </picture>
-            </article>
-            <article>
-                <picture>
-                    <source media="(min-width:650px)" srcset="img/0nullUndef-big.jpg">
-                    <source media="(min-width:465px)" srcset="img/0nullUndef-medium.jpg">
-                    <img src="img/0nullUndef-small.jpg" alt="Chiste">
-                </picture>
+                <video poster='img/The Daily Dweebs-poster.png' controls>
+                    <source src='video/The Daily Dweebs-720.webm' type='video/webm'>
+                    <source src='video/The Daily Dweebs-720.mp4' type='video/mp4'>
+                    <source src='video/The Daily Dweebs-360.mp4' type='video/mp4'>
+                    <track src='video/sub/The Daily Dweebs-eng sub.vtt' srclang='en' label='English subtitles' kind='captions' default>
+                    <track src='video/sub/The Daily Dweebs-esp sub.vtt' srclang='es' label='Subtítulos castellanos' kind='captions'>
+                    <p>El navegador no soporta la reproducción del vídeo.</p>
+                </video>
+                <video poster='img/The Daily Dweebs-poster.png' controls>
+                    <source src='video/The Daily Dweebs-720.mp4' type='video/mp4'>
+                    <source src='video/The Daily Dweebs-360.mp4' type='video/mp4'>
+                    <source src='video/The Daily Dweebs-720.webm' type='video/webm'>
+                    <track src='video/sub/The Daily Dweebs-eng sub.vtt' srclang='en' label='English subtitles' kind='captions' default>
+                    <track src='video/sub/The Daily Dweebs-esp sub.vtt' srclang='es' label='Subtítulos castellanos' kind='captions'>
+                    <p>El navegador no soporta la reproducción del vídeo.</p>
+                </video>
             </article>
         </main>
         <aside>
-            ASIDE
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt 
             </p>
@@ -64,7 +62,6 @@
             </p>
         </aside>
         <footer>
-            FOOTER
             <div>
                 <div>
                 </div>

@@ -67,7 +67,7 @@ main {
     
     article {
         @include flexi(100%);
-        @include flexContainer(1);
+        //@include flexContainer(1);
         @include box($bgColor);
         
         h2 {
@@ -81,6 +81,11 @@ main {
         figure picture img, picture img {
             @include flexi(100%);
             max-width: 100%;
+        }
+        
+        video {
+            max-width: 100%;
+            height: auto;
         }
     }
 }
