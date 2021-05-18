@@ -40,6 +40,10 @@
                     <track src='video/sub/The Daily Dweebs-esp sub.vtt' srclang='es' label='Subtítulos castellanos' kind='subtitles'>
                     <p>El navegador no soporta la reproducción del vídeo.</p>
                 </video>
+                <div>
+                </div>
+            </article>
+            <article>
                 <video poster='img/The Daily Dweebs-poster.png' title='The Daily Dweebs' controls>
                     <source src='video/The Daily Dweebs-720.mp4' type='video/mp4'>
                     <source src='video/The Daily Dweebs-360.mp4' type='video/mp4'>
@@ -48,6 +52,8 @@
                     <track src='video/sub/The Daily Dweebs-esp sub.vtt' srclang='es' label='Subtítulos castellanos' kind='subtitles'>
                     <p>El navegador no soporta la reproducción del vídeo.</p>
                 </video>
+                <div>
+                </div>
             </article>
         </main>
         <aside>
@@ -71,5 +77,10 @@
                 </div>
             </div>
         </footer>
+        <script>
+            window.addEventListener('load', (e) => {
+                videoInfo(document.getElementsByTagName('video'));
+            });
+        </script>
     </body>
 </html>
