@@ -2,6 +2,12 @@ function redir(h) {
     window.location.href = h;
 }
 
+function keyHandlerForLinks(e, link) {  
+    if (e.which == 32 || e.which == 13) {
+        redir(link);
+    }
+}
+
 function videoInfo(videoArr) {
     for (let i = 0; i<videoArr.length; i++) {
         let horas = Math.trunc(videoArr[i].duration/(60*60));

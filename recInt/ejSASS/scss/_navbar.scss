@@ -15,7 +15,7 @@ nav {
             text-decoration: underline;
             cursor: pointer;
         
-            &:hover {
+            &:hover, &:focus {
                 background-color: $txtColor;
                 color: $bgColor;
             }

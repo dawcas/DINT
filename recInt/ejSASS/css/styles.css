@@ -89,6 +89,13 @@ main article video {
   max-width: 100%;
   height: auto;
 }
+main article div ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+main article div ul li {
+  margin-left: 1rem;
+}
 
 footer {
   margin: 0.5%;
@@ -109,6 +116,12 @@ footer div div {
   border-radius: 15px;
   background-color: #1D1D1D;
   color: #F2C4DF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer div div:hover, footer div div:focus {
+  background-color: #F2C4DF;
+  color: #1D1D1D;
 }
 
 nav {
@@ -134,7 +147,7 @@ nav ul li {
   text-decoration: underline;
   cursor: pointer;
 }
-nav ul li:hover {
+nav ul li:hover, nav ul li:focus {
   background-color: #F2C4DF;
   color: #1D1D1D;
 }

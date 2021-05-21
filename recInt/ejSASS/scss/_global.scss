@@ -87,6 +87,15 @@ main {
             max-width: 100%;
             height: auto;
         }
+        
+        div ul {
+            list-style-type: square;
+            list-style-position: inside;
+            
+            li {
+                margin-left: 1rem;
+            }
+        }
     }
 }
 
@@ -100,6 +109,13 @@ footer {
         div {
             @include flexi(1);
             @include box($bgColor);
+            text-decoration: underline;
+            cursor: pointer;
+            
+            &:hover, &:focus {
+                background-color: $txtColor;
+                color: $bgColor;
+            }
         }
     }
 }

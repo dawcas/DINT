@@ -20,13 +20,13 @@
         <nav>
             NAV
             <ul>
-                <li onClick='redir("../")'>
+                 <li role='button' tabindex='0' onclick='redir("../")' onkeypress='keyHandlerForLinks(event, "../")'>
                     Recuperación
                 </li>
-                <li onClick='redir("rendimiento.html")'>
+                <li role='button' tabindex='0' onclick='redir("rendimiento.html")' onkeypress='keyHandlerForLinks(event, "rendimiento.html")'>
                     Cosas del rendimiento
                 </li>
-                <li onClick='redir("vids.html")'>
+                <li role='button' tabindex='0' onclick='redir("vids.html")' onkeypress='keyHandlerForLinks(event, "vids.html")'>
                     Ejercicio vídeos
                 </li>
             </ul>
