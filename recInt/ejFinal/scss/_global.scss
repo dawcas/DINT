@@ -1,0 +1,122 @@
+// Mixins
+// mixin de las características básicas de cada elemento
+@mixin box($margin) {
+    margin: $margin;
+    //padding: 1em;
+    border-radius: 15px;
+}
+
+// STYLES
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include flexContainer(1);
+    margin: 0 auto;
+    //padding: 1em;
+    width: 90%;
+    font-family: LatoLatinWeb;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+header {
+    @include flexContainer(1);
+    @include box($mrgn);
+    align-items: center;
+    width: 100%;
+    background-color: $bgColor;
+    
+    .logo {
+        @include flexi(1);
+        margin-right: 1.5rem;
+        margin-left: 1rem;
+        
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    h1 {
+        @include flexi(5);
+    }
+}
+
+main {
+    @include flexi(3);
+    @include flexContainer(1);
+    @include box($mrgn);
+    max-width: 100%;
+    
+    article {
+        @include flexi(100%);
+        @include flexContainer(1);
+        @include box($mrgn);
+        
+        section {
+            @include flexi(1);
+            margin: 0.7rem;
+        }
+        
+        figure {
+            margin-bottom: 1rem;
+        }
+        
+        figure picture img, picture img {
+            max-width: 25%;
+            margin-left: 0.55rem;
+            margin-bottom: 0.55rem;
+            float: right;
+        }
+        
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        div ul {
+            list-style-type: square;
+            list-style-position: inside;
+            
+            li {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    @include box($mrgn);
+    width: 100%;
+    padding: 1rem;
+    background-color: $navColor;
+    text-align: left;
+    
+    div {
+        @include flexContainer(1);
+        
+        div {
+            @include flexi(1);
+            @include box($mrgn);
+            
+//            &:hover, &:focus {
+//            }
+        }
+        
+        div.copyright {
+            @include flexi(100%);
+            
+            a {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 1.5rem;
+    font-family: JosefinSlab;
+    color: $hColor;
+}

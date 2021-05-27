@@ -1,0 +1,19 @@
+//  Mixin del contenedor flex
+//  $w corresponde al wrap: boleano 
+
+@mixin flexContainer($w) {
+    display: flex;
+    @if $w == 0 {
+        flex-wrap: no-wrap;
+    } @else {
+        flex-wrap: wrap;
+    }
+}
+
+//  Mixin de la caja con flex
+//  $i se corresponde al valor del tamaño del elemento flex
+
+@mixin flexi ($i) {
+    flex: $i;
+    //display: inline-flex;
+}

@@ -1,0 +1,20 @@
+//  Estilos de la barra de navegación
+//mejorar con hover
+
+nav {
+    @include flexi(100%);
+    @include box(0);
+    padding: 1rem;
+    background-color: $navColor;
+    
+    ul {
+        //@include flexContainer(0);
+        list-style: none;
+        
+        li {
+            //@include flexi(1);
+            @include box(0.5rem);
+            display: inline;
+        }
+    }
+}
