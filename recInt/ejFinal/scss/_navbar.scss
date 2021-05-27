@@ -15,6 +15,28 @@ nav {
             //@include flexi(1);
             @include box(0.5rem);
             display: inline;
+            
+            details {
+                position: relative;
+                display: inline;
+                
+                div {
+                    position: absolute;
+                    margin: 0 auto;
+                    padding: 1rem;
+                    background-color: $navColor;
+                    
+                    ul {
+                        position: relative;
+                        list-style: square inside;
+                        line-height: 2rem;
+                        
+                        li {
+                            margin: 1rem auto;
+                        }       
+                    } 
+                }
+            }
         }
     }
 }
