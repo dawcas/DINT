@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
     //padding: 1em;
     width: 90%;
+    max-width: 90%;
     font-family: LatoLatinWeb;
     text-align: justify;
     text-justify: inter-word;
@@ -40,6 +41,7 @@ header {
     
     h1 {
         @include flexi(5);
+        text-align: left;
     }
 }
 
@@ -109,7 +111,7 @@ footer {
 //            }
         }
         
-        div.copyright {
+        div#copyright {
             @include flexi(100%);
             
             a {
