@@ -2,7 +2,6 @@
 // mixin de las características básicas de cada elemento
 @mixin box($margin) {
     margin: $margin;
-    //padding: 1em;
     border-radius: 15px;
 }
 
@@ -89,15 +88,6 @@ main {
             max-width: 100%;
             height: auto;
         }
-        
-        div ul {
-            list-style-type: square;
-            list-style-position: inside;
-            
-            li {
-                margin-left: 1rem;
-            }
-        }
     }
 }
 
@@ -135,6 +125,52 @@ h1, h2, h3, h4, h5 {
     color: $hColor;
 }
 
+form {
+    @include flexi(100%);
+    @include flexContainer(1);
+    //flex-flow: column;
+    
+    label {
+        @include flexi(30%);
+        text-align: right;
+    }
+    
+    input {
+        @include flexi(65%);
+        margin-bottom: 2rem;
+    }
+    
+    textarea {
+        @include flexi(65%);
+        height: 20rem;
+    }
+    
+    button {
+        margin-top: 2rem;
+        margin-left: 50%;
+        padding: 1rem;
+        border-radius: 15px;
+        border:  2px solid $bgColor;
+        background-color: $bgColor;
+        
+        &:active {
+            background-color: white;
+        }
+    }
+}
+
+p {
+    margin-bottom: 1.2rem;
+}
+
+a {
+    color: $hvColor;
+    
+    &:visited {
+        color: $hvvColor;
+    }
+}
+
 .rightTxt {
     text-align: right;
 }
@@ -143,4 +179,8 @@ h1, h2, h3, h4, h5 {
     @include flexContainer(0);
     justify-content: center;
     align-items: center;
+}
+
+.formContainer {
+    max-width: 80%;
 }
