@@ -18,8 +18,46 @@
             max-width: 25%;
             margin: 0 auto;
             margin-bottom: -2.5rem;
-            z-index: 1;
+            z-index: 2;
         }
+        
+        #burguer {
+            display: block;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            z-index: 1;
+            text-align: right;
+            background-color: $bgColor;
+            
+            details {
+                summary{
+                    list-style: none;
+                    
+                    &::-webkit-details-marker { 
+                        display:none;
+                    }
+                }
+                
+                div ul {
+                    z-index: 999999;
+                }
+            }
+            
+            ul {
+                padding: 1.2rem;
+                list-style: none;
+                font-size: 1.5rem;
+                
+                li {
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+    
+    main>article>section>figure.carrusel {
+        width: 100%;
     }
 
     nav {

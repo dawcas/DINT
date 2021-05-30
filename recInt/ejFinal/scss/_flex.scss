@@ -4,7 +4,7 @@
 @mixin flexContainer($w) {
     display: flex;
     @if $w == 0 {
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
     } @else {
         flex-wrap: wrap;
     }
