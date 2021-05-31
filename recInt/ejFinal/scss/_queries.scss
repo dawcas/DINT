@@ -154,11 +154,21 @@
     main {
         article {
             flex-direction: column-reverse; 
+
+            h1 {
+                margin-bottom: 0;
+            }
             
             section {
                 max-width: 100%;
                 margin-left: 1rem auto;
                 margin-right: 1rem auto;
+                
+                
+                h2 {
+                    font-size: 1.7rem;
+                    text-transform: none;
+                }
                 
                 h2.rightTxt {
                     text-align: left;
@@ -174,13 +184,16 @@
                 }
             }
             
-            figure.imgTxt picture img {
+            figure.imgTxt {
                 display: block;
                 max-width: 100%;
-                margin: 0 auto;
-                max-height: 15rem;
                 float: none;
-            }
+                
+                picture img {
+                    margin: 0 auto;
+//                    max-height: 15rem;
+                }
+            } 
         }
     }
     

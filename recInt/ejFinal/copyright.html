@@ -6,39 +6,43 @@
         <meta name="generator" content="Geany 1.33">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href='css/styles.min.css' rel='stylesheet'>
+        <link href="img/favicon.png" rel="icon" type="image/png">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> 
 <!--
         <script src='js/script.js'></script>
 -->
     </head>
     <body>
-        <header>
+        <header role='heading'>
             <div id='burguer'>
                 <details>
-                    <summary>Menú</summary>
+                    <summary aria-label="navigation" role='button'>
+                        <span class="iconify" data-icon="fa:bars" data-inline="false"></span>
+                    </summary>
                     <div>
                         <ul>
-                            <li>
-                                <a href=''>Helados</a>
+                            <li role='menuitem'>
+                                <a role='link' href=''>Helados</a>
                             </li>
-                            <li>
-                                <a href='sorbetes.html'>Sorbetes</a>
+                            <li role='menuitem'>
+                                <a role='link' href='sorbetes.html'>Sorbetes</a>
                             </li>
-                            <li>
-                                <a href='/interfaces/recInt/ejFinal/#elaboracion'>Elaboración</a>
+                            <li role='menuitem'>
+                                <a role='link' href='/interfaces/recInt/ejFinal/#elaboracion'>Elaboración</a>
                             </li>
-                            <li>
-                                <a href='quienes_somos.html'>Quiénes somos</a>
+                            <li role='menuitem'>
+                                <a role='link' href='quienes_somos.html'>Quiénes somos</a>
                             </li>
-                            <li>
-                                <a href='contacto.html'>Contacto</a>
+                            <li role='menuitem'>
+                                <a role='link' href='contacto.html'>Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </details>
             </div>
             <div class='logo'>
-                <a href='/interfaces/recInt/ejFinal/'>
-                    <img alt='IMAGEN' src='img/icon.png'>
+                <a role='link' href='/interfaces/recInt/ejFinal/'>
+                    <img alt='Logo de la empresa' src='img/icon.png' role='logo'>
                 </a>
             </div>
             <h1>
@@ -46,63 +50,73 @@
             </h1>
             <nav>
                 <ul>
-                    <li>
+                    <li role='menuitem'>
                         <details>
-                            <summary>Sabores</summary>
+                            <summary id='sabores' aria-label="navigation" role='button'>Sabores</summary>
                             <div>
                                 <ul>
-                                    <li><a href='helados.html'>Helados</a></li>
-                                    <li><a href='sorbetes.html'>Sorbetes</a></li>
+                                    <li role='menuitem'><a role='link' href='helados.html'>Helados</a></li>
+                                    <li role='menuitem'><a role='link' href='sorbetes.html'>Sorbetes</a></li>
                                 </ul>
                             </div>
                         </details>
                     </li>
-                    <li>
-                        <a href='/interfaces/recInt/ejFinal/#elaboracion'>Elaboración</a>
+                    <li role='menuitem'>
+                        <a role='link' href='/interfaces/recInt/ejFinal/#elaboracion'>Elaboración</a>
                     </li>
-                    <li class='logo'>
-                        <a href='/interfaces/recInt/ejFinal/'>
-                            <img alt='IMAGEN' src='img/icon.png'>
+                    <li role='menuitem' class='logo'>
+                        <a role='link' href='/interfaces/recInt/ejFinal/'>
+                            <img alt='Logo de la empresa' src='img/icon.png' role='logo'>
                         </a>
                     </li>
-                    <li>
-                        <a href='quienes_somos.html'>Quiénes somos</a>
+                    <li role='menuitem'>
+                        <a role='link' href='quienes_somos.html'>Quiénes somos</a>
                     </li>
-                    <li>
-                        <a href='contacto.html'>Contacto</a>
+                    <li role='menuitem'>
+                        <a role='link' href='contacto.html'>Contacto</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main role='main'>
             <article>
                 <section>
                     <h1>Copyright</h1>
-                    <p>
+                    <p tabindex='0'>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ull
                     </p>
-                    <p>
+                    <p tabindex='0'>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ull
                     </p>
                 </section>
             </article>
         </main>
-        <footer>
+        <footer role='contentinfo'>
             <div>
                 <div id='contacto'>
-                    <p>CONTACTO<br>Dirección C/ Falsa 123, Imaginación<br>email: info@vega.do<br>tlf: 999999999</p>
+                    <p tabindex='0'>CONTACTO<br>Dirección C/ Falsa 123, Imaginación<br>email: info@vega.do<br>tlf: 999999999</p>
                 </div>
                 <div id='horario'>
-                    <p>HORARIO<br>08:00 - 22:00</p>
+                    <p tabindex='0'>HORARIO<br>08:00 - 22:00</p>
                 </div>
                 <div>
-                    <p>RR.SS.</p>
+                    <p>
+                        <a href=''>
+                            <span class="iconify" data-icon="akar-icons:facebook-fill" data-inline="false"></span>
+                        </a>
+                        <a href=''>
+                            <span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span>
+                        </a>
+                        <a href=''>
+                            <span class="iconify" data-icon="akar-icons:twitter-fill" data-inline="false"></span>
+                        </a>
+                    </p>
                 </div>
                 <div>
-                    <p><a href=''>Alérgenos (pdf)</a></p>
+                    <p tabindex='0'><a role='link' href=''>Alérgenos (pdf)</a></p>
                 </div>
                 <div id='copyright'>
-                    <a href='copyright.html'>Copyright ©</a>
+                    <a role='link' href='copyright.html'>Copyright ©</a>
                 </div>
             </div>
         </footer>
